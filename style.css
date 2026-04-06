@@ -379,7 +379,18 @@ footer .line-footer p a{
     .slide img{
         width: 100%;
     }
-
+    .navigation-auto{
+        width: 100%;
+        display: flex;
+        margin-top: 250px;
+        justify-content: center;
+    }
+    .manual-navigation {
+        width: 100%;
+        display: flex;
+        margin-top: 28px;
+        justify-content: center;
+    }
     .slide-destaques {
         padding: 10px 0;
         height: auto;
