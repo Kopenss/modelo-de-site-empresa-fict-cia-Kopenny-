@@ -1,0 +1,434 @@
+
+/* Estilo Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #c59dff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+h2.titulo span{
+    color: #c59dff;
+}
+button:hover{
+    box-shadow: 0px 0px 0px #ffffff;
+    transform: scale(1.05);
+}
+
+/* Estilo cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items:  center;
+    justify-content: space-between;
+}
+header a{
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: rgb(240, 255, 240);
+    transform: scale(1.05);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo Carrossel topo */
+
+section.destaques{
+    margin-top: 0;
+}
+
+.slide-destaques{
+    margin: 0;
+    padding: 20px 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width:25%;
+    position: relative;
+}
+
+.slide img{
+    width: 1000px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 1000px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #ffffff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 1000px;
+    margin-top: 560px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #ffffff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #ffffff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #ffffff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #ffffff;
+}
+
+
+/* Estilo do compromisso */
+
+section.compromisso{
+    padding: 164px 4%;
+}
+section.compromisso .flex{
+    gap: 90px;
+}
+.compromisso .compromisso-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    text-align: justify;
+}
+.compromisso .compromisso-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff59;
+}
+.compromisso .compromisso-box i{
+    font-size: 90px;
+    color: #c59dff;
+}
+.compromisso .compromisso-box h3{
+    font-size: 30px;
+    margin: 15px 0px;
+}
+
+
+/* Estilo sobre */
+
+section.quem-somos{
+    padding: 50px 4%;
+
+}
+section.quem-somos .flex{
+    align-items: center;
+    gap: 60px;
+}
+.quem-somos .img-quem-somos img{
+    width: 400px;
+    border-radius: 20px;
+}
+
+.quem-somos .txt-quem-somos{
+    color: #ffffff;
+}
+.quem-somos .txt-quem-somos h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.quem-somos .txt-quem-somos h2 span{
+    color: #c59dff;
+    display: block;
+}
+.quem-somos .txt-quem-somos p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.quem-somos .txt-quem-somos .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #c59dff;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: .2s;
+}
+
+/* Estilo artes meio do site*/
+
+section.artes{
+    padding:30px 4%;
+}
+section.artes .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.artes .img-1 img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+.artes .img-2 img{
+    position: relative;
+    animation: flutuar 4s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top:30px
+    }
+    
+}
+
+/* Estilo dos projetos */
+
+section.projetos{
+    padding: 80px 4%;
+}
+
+section.projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: #c59dff;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 11s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+
+/* Estilo do rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 18px rgba(255, 255, 255, 0.027);
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #c59dff;
+}
+
+footer .line-footer p i{
+    color: #c59dff;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+footer .line-footer p a{
+    color: #ffffff;
+}
+
+/* Classes gerais */
+
+
+/* Cabeçalho responsivo */
+@media screen and (max-width: 1020px){
+    /* Menu desktop e slides */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    .slider{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .slides {
+        display: flex;
+        width: 400%;
+        height: auto;
+    }
+    .slide{
+        width: 25%;
+        transition: 0.6s;
+    }
+
+    .slide img{
+        width: 100%;
+    }
+
+    .slide-destaques {
+        padding: 10px 0;
+        height: auto;
+    }
+    /* Compromisso */
+    section.compromisso{
+        padding: 150px 4%;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    h2.titulo{
+    font-size: 30px;
+    }
+    /* Quem somos */
+    section.quem-somos{
+        padding: 80px 8%;
+    }
+    .quem-somos .txt-quem-somos h2{
+        text-align: center;
+    }
+    .quem-somos .txt-quem-somos h2 span{
+        display: inline;
+    }
+    .quem-somos .txt-quem-somos .btn-social{
+        display: flex;
+        justify-content: center;
+    }
+    .quem-somos .img-quem-somos img{
+        width: 100%;
+    }
+    section.artes .flex{
+        gap: 40px;
+    }
+
+    /* Projetos */
+    section.projetos{
+        padding: 80px 8%;
+    }
+    section.projetos .flex{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 60px;
+    }
+    footer .flex{
+        flex-direction: column;
+    }
+    footer .line-footer{
+        text-align: center;
+    }
+}
